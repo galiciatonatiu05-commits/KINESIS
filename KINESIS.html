@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINESIS - Descubre el sonido</title>
+    <!-- Incluye el CDN de Tailwind CSS para un estilo moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1d1d1f;
+            /* Degradado de fondo atractivo */
+            background-image: linear-gradient(to bottom, #f5f5f7, #e0e0e3);
+            background-attachment: fixed;
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #6a82fb, #fc5c7d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        /* Nuevo fondo degradado para la sección de modelos */
+        .modelos-gradient {
+            background-image: linear-gradient(to top, #eef2f3, #8e9eab);
+            background-attachment: fixed;
+        }
+        /* Nuevo fondo degradado para la sección de accesorios */
+        .accesorios-gradient {
+            background-image: linear-gradient(to bottom, #f3e9e9, #c7d2d8);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Contenedor principal para toda la página -->
+    <div class="min-h-screen flex flex-col">
+
+        <!-- Barra de navegación (Header) -->
+        <header class="bg-white sticky top-0 z-50 shadow-sm">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center flex-wrap">
+                <!-- Logo o nombre del sitio -->
+                <a href="#" class="text-2xl font-bold text-gray-800">
+                    KINESIS
+                </a>
+                <!-- Menú de navegación, adaptable para móvil -->
+                <ul class="flex space-x-2 md:space-x-6 text-gray-600 font-medium text-sm md:text-base mt-2 md:mt-0 flex-wrap justify-center">
+                    <li><a href="#modelos" class="hover:text-black transition-colors duration-300">Modelos</a></li>
+                    <li><a href="#accesorios" class="hover:text-black transition-colors duration-300">Accesorios</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sección principal (Hero) -->
+        <main class="flex-grow">
+            <section class="py-20 md:py-32 text-center bg-gray-100">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight mb-4">
+                        <span class="text-gradient">El sonido de otro mundo</span>
+                    </h1>
+                    <p class="mt-4 text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                        Descubre la gama completa de AirPods y sus accesorios.
+                    </p>
+                    <a href="#modelos" class="bg-gray-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors duration-300">
+                        Explora la colección
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sección de Modelos de AirPods -->
+            <section id="modelos" class="py-16 md:py-24 modelos-gradient">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
+                        Modelos de AirPods
+                    </h2>
+
+                    <!-- Contenedor de las tarjetas de productos -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Tarjeta para AirPods 2da Generación -->
+                        <div id="airpods2" class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MV7N2_AV1?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1680104760882" alt="Imagen de AirPods 2da Generación" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">AirPods 2da Generación</h3>
+                            <p class="text-gray-600 mb-4">
+                                La experiencia inalámbrica original. Simple, mágica y de gran sonido.
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$300 MXN</p>
+                            <div class="text-left text-gray-700 font-medium w-full max-w-xs">
+                                <p class="font-bold mb-2">Contenido de la caja:</p>
+                                <ul class="space-y-1">
+                                    <li>• AirPods</li>
+                                    <li>• Estuche de carga Lightning</li>
+                                    <li>• Cable de Lightning a USB-A</li>
+                                    <li>• Documentación</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta para AirPods Pro 2da Gen (con cancelación) -->
+                        <div id="airpods2-pro-anc" class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83_AV2?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1661449618586" alt="Imagen de AirPods Pro 2da Generación con cancelación" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">AirPods Pro 2da Gen (con cancelación real)</h3>
+                            <p class="text-gray-600 mb-4">
+                                Sumérgete en tu mundo con la mejor cancelación activa de ruido y el modo ambiente.
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$1,200 MXN</p>
+                            <div class="text-left text-gray-700 font-medium w-full max-w-xs">
+                                <p class="font-bold mb-2">Contenido de la caja:</p>
+                                <ul class="space-y-1">
+                                    <li>• AirPods Pro</li>
+                                    <li>• Estuche de carga MagSafe</li>
+                                    <li>• Puntas de silicona</li>
+                                    <li>• Cable de USB-C a Lightning</li>
+                                    <li>• Documentación</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta para AirPods 3ra Generación -->
+                        <div id="airpods3" class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861342000" alt="Imagen de AirPods 3ra Generación" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">AirPods 3ra Generación</h3>
+                            <p class="text-gray-600 mb-4">
+                                Un diseño completamente nuevo y Audio Espacial para un sonido envolvente.
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$900 MXN</p>
+                            <div class="text-left text-gray-700 font-medium w-full max-w-xs">
+                                <p class="font-bold mb-2">Contenido de la caja:</p>
+                                <ul class="space-y-1">
+                                    <li>• AirPods</li>
+                                    <li>• Estuche de carga MagSafe</li>
+                                    <li>• Cable de USB-C a Lightning</li>
+                                    <li>• Documentación</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta para AirPods 4ta Generación (Concepto) -->
+                        <div id="airpods4" class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="res/121203-airpods-4.png" alt="Imagen conceptual de AirPods 4ta Generación" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">AirPods 4ta Gen (con cancelación real)</h3>
+                            <p class="text-gray-600 mb-4">
+                                **Modelo conceptual.** Diseño futurista con cancelación de ruido real y funciones mejoradas.
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$1,500 MXN</p>
+                            <div class="text-left text-gray-700 font-medium w-full max-w-xs">
+                                <p class="font-bold mb-2">Contenido de la caja:</p>
+                                <ul class="space-y-1">
+                                    <li>• AirPods</li>
+                                    <li>• Estuche de carga MagSafe</li>
+                                    <li>• Cable de USB-C a USB-C</li>
+                                    <li>• Documentación</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta para AirPods Max -->
+                        <div id="airpodsmax" class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="res/airpodsmax.jpeg" alt="Imagen de AirPods Max" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">AirPods Max</h3>
+                            <p class="text-gray-600 mb-4">
+                                La experiencia de audio de alta fidelidad que redefine la escucha.
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$8,000 MXN</p>
+                            <div class="text-left text-gray-700 font-medium w-full max-w-xs">
+                                <p class="font-bold mb-2">Contenido de la caja:</p>
+                                <ul class="space-y-1">
+                                    <li>• AirPods Max</li>
+                                    <li>• Smart Case</li>
+                                    <li>• Cable de USB-C a Lightning</li>
+                                    <li>• Documentación</li>
+
+                                <p class="text-sm text-gray-500 mt-2">
+                                Colores disponibles:Negro, Gris, Azul, Rojo
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Accesorios -->
+            <section id="accesorios" class="py-16 md:py-24 accesorios-gradient">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
+                        Accesorios Esenciales
+                    </h2>
+
+                    <!-- Contenedor de las tarjetas de accesorios -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Tarjeta para Batería MagSafe -->
+                        <div class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="res/CapturadePantalla2022-02-07ala_s_23.46.57_3225e844-9fa5-4143-a5af-3213c65946a9.webp" alt="Imagen de Batería MagSafe" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">Batería MagSafe</h3>
+                            <p class="text-gray-600 mb-4">
+                                La forma más fácil de mantener cargados tus dispositivos.
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$800 MXN</p>
+                        </div>
+                        
+                        <!-- Tarjeta para Fundas AirPods Pro 2 -->
+                        <div class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="res/4b29c453-6760-4301-9859-833c13730403.fff2d4267a4c764c1110f912ac59e87b.webp" alt="Imagen de Fundas AirPods 2ra Generación" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">Fundas para AirPods Pro 2</h3>
+                            <p class="text-gray-600 mb-4">
+                                Protege tus auriculares con estilo.
+                            </p>
+                            <p class="text-sm text-gray-500 mt-2">
+                                Colores disponibles:Azul Marino, Azul Cielo, Rosa y Morado
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$100 MXN</p>
+                        </div>
+                        
+                        <!-- Tarjeta para Fundas AirPods 3ra Gen -->
+                        <div class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="res/fundas.jpeg" alt="Imagen de Fundas AirPods 3ra Generación" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">Fundas para AirPods 3ra Gen</h3>
+                            <p class="text-gray-600 mb-4">
+                                Diseños elegantes para un ajuste perfecto.
+                            </p>
+                            <p class="text-sm text-gray-500 mt-2">
+                                Colores disponibles:Negro, Azul Marino, Rosa Claro, Rosa, Azul Cielo, Morado
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$100 MXN</p>
+                        </div>
+                        
+                        <!-- Tarjeta para Cargador C-C -->
+                        <div class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="res/WhatsApp Image 2025-08-21 at 17.56.06.jpeg" alt="Imagen de Cargador C-C - Set cubo y cable" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">Cargador C-C - Set cubo y cable</h3>
+                            <p class="text-gray-600 mb-4">
+                                Set de cubo y cable para la carga rápida y moderna.
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$200 MXN</p>
+                        </div>
+                        
+                        <!-- Tarjeta para Cargador L-C -->
+                        <div class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center">
+                            <img src="res/WhatsApp Image 2025-08-21 at 17.57.36.jpeg" alt="Imagen de Cargador L-C - Set cubo y cable" class="w-full max-w-xs mb-6 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-2">Cargador L-C - Set cubo y cable</h3>
+                            <p class="text-gray-600 mb-4">
+                                El set de cubo y cable para todos tus dispositivos Lightning.
+                            </p>
+                            <p class="text-xl font-bold text-gray-800 mb-4">$200 MXN</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página (Footer) -->
+        <footer class="bg-gray-800 text-gray-400 py-8">
+            <div class="container mx-auto px-4 text-center text-sm">
+                <p>&copy; 2025 AirPods. Todos los derechos reservados. Página creada con fines demostrativos.</p>
+                 <!-- Contactame -->
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="https://wa.me/2463309051" target="_blank" class="text-gray-300 hover:text-white transition-colors duration-300">
+                        WhatsApp:2463309051
+                    </a>
+                    <a href="https://www.instagram.com/tona3807n" target="_blank" class="text-gray-300 hover:text-white transition-colors duration-300">
+                        Instagram:tona3807n
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
