@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro de Matemáticas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="maestro-container">
+        <h1>Maestro de Matemáticas Virtual</h1>
+        <p>¡Practica tus habilidades!</p>
+
+        <div class="maestro-card">
+            <img id="maestro-img" src="https://i.ibb.co/6P0D63M/maestro-neutro.png" alt="Maestro de Matemáticas">
+            <div id="puntuacion">Puntuación: <span>0</span></div>
+        </div>
+
+        <div class="juego-matematico">
+            <div id="problema"></div>
+            <div id="mensaje"></div>
+            <input type="number" id="respuesta" placeholder="Tu respuesta">
+            <button id="comprobar-btn">Comprobar</button>
+            <button id="siguiente-btn">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
